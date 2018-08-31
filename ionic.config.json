@@ -1,0 +1,7 @@
+{
+  "name": "thehulk",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

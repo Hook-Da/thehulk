@@ -1,0 +1,31 @@
+<ion-header [style.backgroundImage]="'url(' + singer.logo_src + ')'">
+
+  <ion-navbar>
+    <ion-title ></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-grid>
+  <ion-row>
+    <ion-col col-12 col-md-12 col-xl-12>
+        <div class="singer-fullName">{{singer.title}}</div>
+    </ion-col>
+    <ion-col col-12 col-md-12 col-xl-12>
+      <ion-list>
+        <div *ngFor = "let song of songs">
+          <ion-item>
+              <span>{{song.item.title}}</span>
+              <ion-icon item-end name="play"></ion-icon>
+              <ion-icon item-end name="pause"></ion-icon>
+              <ion-icon item-end name="cloud-download"></ion-icon>
+              <ion-icon item-end name="checkmark"></ion-icon>
+          </ion-item>
+        </div>
+      </ion-list>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>

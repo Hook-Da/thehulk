@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Hulks first ionic
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content><!--
+<button (click)="onClick(hulk)" ion-item *ngFor="let hulk of hulks">
+  <ion-avatar>
+    <img src="http://placehold.it/75" [hidden]="hulk.hide">
+  </ion-avatar>
+  <h2>{{hulk.name}} {{hulk.lastName}}</h2>
+  <p>Has power</p>
+  <h2>{{hulk.power}}</h2>
+</button>-->
+<ion-list>
+  <ion-item>
+    <ion-label fixed>Username:</ion-label>
+    <ion-input [(ngModel)]="username" type="text" value=""></ion-input>
+  </ion-item>
+</ion-list>
+<h2>{{username}}</h2>
+<ion-grid>
+  <ion-row>
+    <ion-col col-3><button ion-button (click)="secPage()">Go to</button></ion-col>
+    <ion-col col-3><button ion-button (click)="third()">Third</button></ion-col>
+    <ion-col col-3><button ion-button (click)="store()">Store</button></ion-col>
+    <ion-col col-3><button ion-button (click)="reOrder()">Reorder page</button></ion-col>
+  </ion-row>
+  <ion-row>
+    <!--<ion-col col-3><button ion-button (click)="piwg()">Working with component</button></ion-col>-->
+    <ion-col col-3><button ion-button (click)="singer()">Singer Page</button></ion-col>
+  </ion-row>
+</ion-grid>
+
+
+</ion-content>

@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Исполнители
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button clear >
+        <ion-icon name="ios-search-outline" style="color:black"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content >
+   <ion-grid>
+     <ion-row>
+       <ion-col col-4 col-md-4 col-xl-4 *ngFor="let artist of artists">
+         <div><img class="image-container" (click)="loadSinger(artist.item)" src="{{artist.item.logo_src}}"/></div>
+         <p class="text-under" (click)="loadSinger(artist.item)">{{artist.item.title}}</p>
+       </ion-col>
+     </ion-row>
+   </ion-grid>
+  <!--<img  src="assets/img/1.png" >
+  <img  src="assets/img/2.png" >
+  <img  src="assets/img/3.png" >
+  <img  src="assets/img/4.png" >
+  <img  src="assets/img/5.png" >
+  <img  src="assets/img/6.png" >
+  <img  src="assets/img/7.png">
+  <img  src="assets/img/8.png">
+  <img  src="assets/img/9.png">
+  <img  src="assets/img/10.png" >
+  <img  src="assets/img/11.png">
+  <img  src="assets/img/12.png" >
+<--!<h2>Here</h2>
+    <img  *ngFor="let artist of artists" (click)="loadSinger(artist.item)" src="{{artist.item.logo_src}}" >-->
+  
+</ion-content>

@@ -1,0 +1,25 @@
+page-profile {
+    ion-header{
+        .toolbar-background {
+        //background-image:url('http://райхан.рф/storage/web/source/1/0SxuQSw8KyjMFYuG-6yKPID6PCpGddHI.jpg');
+        min-height:20 px;
+        opacity: 0;
+      }
+      //background-image:url('http://райхан.рф/storage/web/source/1/0SxuQSw8KyjMFYuG-6yKPID6PCpGddHI.jpg');
+      background-repeat:no-repeat;
+        background-size:cover;
+        background-position:top;
+    }
+    ion-navbar.toolbar {
+        min-height: 220px;
+    }
+    .image-container{
+        background-size:cover;
+    }
+    .singer-fullName{
+        font-size:20px;
+        font-weight:bold;
+        font-family:sans-serif;
+    }
+}
+
